@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Authentication</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="">
+        <label for="email">Email</label> <br>
+        <input type="email" id="email" placeholder="Example@email.com" onchange="emailValidation()"> <br>
+        <p class="error-msg">Make sure email is more than 3 characters and has @ and a .</p>
+        <label for="password">Password</label> <br>
+        <input type="password" id="password" placeholder="Your Password" onchange="passwordValidation()"> <br>
+        <p class="error-msg">Make sure password is more than 8 characters.</p>
+        <p class="valid-msg hide">All good to go!</p>
+        <button type="button" onclick="confirmation()">Submit</button>
+    </form>
+    <script src="./script.js"></script>
+</body>
+
+</html>
